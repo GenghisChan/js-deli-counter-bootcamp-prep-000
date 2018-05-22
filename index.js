@@ -15,8 +15,10 @@ function nowServing(x){
 
 function currentLine(x){
   var i = 0;
+  var line = [];
   while(i < x.length){
-  var line = (katzDeliLine[i] + 1) + ". " + katzDeliLine[i]
+  line.push(katzDeliLine[i] + 1) + ". " + katzDeliLine[i]
+  i++
   if(x === true){
       return "The line is currently: " + `${line}` // create line variable
  
