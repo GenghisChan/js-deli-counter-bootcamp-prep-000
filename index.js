@@ -6,12 +6,10 @@ function takeANumber(x, name){
 }
 
 function nowServing(x){
-  if(x === true) {
-    var person = x[0]
-    return "Currently serving " + person + "."
-    
+  if(x.length === 0) {
+    return "There is nobody waiting to be served!"
   }else {
-      return "There is nobody waiting to be served!"
+    return "Currently serving (`${x.shift()}`"
   }
   x.shift(0)
 }
