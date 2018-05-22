@@ -24,3 +24,4 @@ function currentLine(katzDeliLine){
    str += newLine.join(', ')
    return str;
   }
+}
