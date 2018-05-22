@@ -26,3 +26,4 @@ function currentLine(x){
         return "The line is currently empty." //iinsrrt variable with number position eg: 1.sara 2. 
     }
 }
+}
