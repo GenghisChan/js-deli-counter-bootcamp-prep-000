@@ -13,12 +13,15 @@ function nowServing(x){
   }
 }
 
-function currentLine(line){
- 
-  if(line === true){
-      return "The line is currently: " + line
+function currentLine(x){
+  var i = 0;
+  while(i < x.length){
+  var line = (katzDeliLine[i] + 1) + ". " + katzDeliLine[i]
+  if(x === true){
+      return "The line is currently: " + `${line}` // create line variable
  
     } else {
-        return "The line is currently empty."
+        return "The line is currently empty." //iinsrrt variable with number position eg: 1.sara 2. 
     }
+}
 }
