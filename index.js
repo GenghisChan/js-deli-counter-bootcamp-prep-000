@@ -18,7 +18,7 @@ function currentLine(x){
   var line = [];
   while(i < x.length){
   line.push(`${i}` + 1) + ". " + katzDeliLine[i]
-    i++}
+    i++
   if(x === true){
       return "The line is currently: " + `${line}` // create line variable
  
