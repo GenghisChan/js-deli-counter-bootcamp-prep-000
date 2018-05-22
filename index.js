@@ -18,12 +18,11 @@ function currentLine(x){
   var line = [];
   while(i < x.length){
   line.push(katzDeliLine[i] + 1) + ". " + katzDeliLine[i]
-  i++
+    i++}
   if(x === true){
       return "The line is currently: " + `${line}` // create line variable
  
     } else {
         return "The line is currently empty." //iinsrrt variable with number position eg: 1.sara 2. 
     }
-}
 }
