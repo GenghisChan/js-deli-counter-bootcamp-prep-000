@@ -13,17 +13,10 @@ function nowServing(x){
   }
 }
 
-function currentLine(x){
-  var i = 0;
-  var line = [];
-  while(i < x.length){
-  line.push(`${i}` + 1) + ". " + katzDeliLine[i]
-    i++
-  if(x === true){
-      return "The line is currently: " + `${line}` // create line variable
- 
-    } else {
-        return "The line is currently empty." //iinsrrt variable with number position eg: 1.sara 2. 
-    }
-}
-}
+function currentLine(katzDeli) {
+  for (let i = 0; i < katzDeli.length; i++) {
+    line.push(` `+[i+1]+`. `  + katzDeli[i])
+   }
+   return(`The line is currently:` + line);
+ }
+
