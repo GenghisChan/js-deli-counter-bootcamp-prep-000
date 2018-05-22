@@ -2,7 +2,7 @@ var katzDeliLine = [];
 
 function takeANumber(x, name){
   x.push(`${name}`) 
-  return "Welcome, " + `${name}` + "." + " You are number " + x.length + " in line."
+  return "Welcome, " + `${name}` + "." + " You are number " + ${x.length} + " in line."
 }
 
 function nowServing(x){
@@ -14,11 +14,14 @@ function nowServing(x){
 }
 
 function currentLine(line){
-  if(line === true){
-    for(var i = 0; i < line.length; i++){
-      return "The line is currently: " + (i+1) + ". " + line[0]
+  var i = 0;
+  
+  if(line === 0){
+  return "The line is currently empty."
+    } else {
+      while(i < line.length){
+        return "The line is currently: " + (i+1) + ". " + line[0]
+      
     }
-  }else{
-    return "The line is currently empty."
   }
 }
