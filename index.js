@@ -22,7 +22,7 @@ function currentLine(katzDeliLine){
     for (let i = 0; i < katzDeliLine.length; i++){
         newLine.push(`${[i+1]}. ${katzDeliLine[i]}`)
       }
-   str += newLine
+   str += newLine.join(', ')
    return str;
   }
 }
