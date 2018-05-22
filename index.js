@@ -1,7 +1,7 @@
 var katzDeliLine = [];
 
 function takeANumber(x, name){
-  x.push(name) //a way to get position in line index of value + 1
+  x.push(`${name}`) 
   var pos = x.indexOf(name) + 1
   return "Welcome, " + name + "." + " You are number " + pos + " in line."
 }
